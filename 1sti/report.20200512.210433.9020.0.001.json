@@ -1,0 +1,417 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200512.210433.9020.0.001.json",
+    "dumpEventTime": "2020-05-12T21:04:34Z",
+    "dumpEventTimeStamp": "1589328274038",
+    "processId": 9020,
+    "threadId": null,
+    "cwd": "d:\\Github\\1sti",
+    "commandLine": [
+      "node",
+      "f:\\Users\\Buma\\Desktop\\getMaxLessThanK.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Professional Service Pack 1",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD Phenom(tm) II X4 850 Processor",
+        "speed": 3315,
+        "user": 13859890,
+        "nice": 0,
+        "sys": 2975515,
+        "idle": 189955125,
+        "irq": 41718
+      },
+      {
+        "model": "AMD Phenom(tm) II X4 850 Processor",
+        "speed": 3315,
+        "user": 16729140,
+        "nice": 0,
+        "sys": 3408078,
+        "idle": 186652203,
+        "irq": 49406
+      },
+      {
+        "model": "AMD Phenom(tm) II X4 850 Processor",
+        "speed": 3315,
+        "user": 16227984,
+        "nice": 0,
+        "sys": 5045187,
+        "idle": 185516234,
+        "irq": 108187
+      },
+      {
+        "model": "AMD Phenom(tm) II X4 850 Processor",
+        "speed": 3315,
+        "user": 16183187,
+        "nice": 0,
+        "sys": 5773531,
+        "idle": 184832671,
+        "irq": 1436500
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Conexão local",
+        "internal": false,
+        "mac": "00:25:22:ea:57:d3",
+        "address": "fe80::e94b:e7ef:f85f:551",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "Conexão local",
+        "internal": false,
+        "mac": "00:25:22:ea:57:d3",
+        "address": "192.168.0.29",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0e",
+        "address": "fe80::19c7:b194:dc94:9bf7",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:0e",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VirtualBox Host-Only Network #2",
+        "internal": false,
+        "mac": "0a:00:27:00:00:10",
+        "address": "fe80::59ef:d64b:874c:30b2",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 16
+      },
+      {
+        "name": "VirtualBox Host-Only Network #2",
+        "internal": false,
+        "mac": "0a:00:27:00:00:10",
+        "address": "192.168.99.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Buma-DESK"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000013f8a2449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x000000013f8a69a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x000000013f8a5828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x000000013f9dd8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00000001401f9bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00000001401e1c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00000001400ae1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00000001400cb0cb",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+59"
+    },
+    {
+      "pc": "0x00000001400cb081",
+      "symbol": "v8::internal::Factory::NewFixedArray+65"
+    },
+    {
+      "pc": "0x000000013ffa7e3f",
+      "symbol": "v8::debug::Script::GetIsolate+7631"
+    },
+    {
+      "pc": "0x000000013fe58e6a",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+162938"
+    },
+    {
+      "pc": "0x0000000140646c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x0000014c24dc447e",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 909168640,
+    "totalCommittedMemory": 909168640,
+    "usedMemory": 905797560,
+    "availableMemory": 1155836144,
+    "memoryLimit": 2062548992,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2094912,
+        "used": 1734032,
+        "available": 360880
+      },
+      "old_space": {
+        "memorySize": 1454080,
+        "committedMemory": 1454080,
+        "capacity": 1187232,
+        "used": 1187232,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 158048,
+        "used": 158048,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 266240,
+        "capacity": 171680,
+        "used": 171680,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2880,
+        "used": 2880,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094912,
+        "used": 0,
+        "available": 2094912
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 18.718,
+    "kernelCpuSeconds": 5.171,
+    "cpuConsumptionPercent": 29.4926,
+    "maxRss": 1515806720,
+    "pageFaults": {
+      "IORequired": 787521,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1,
+      "writes": 5
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=D:": "d:\\Github\\1sti",
+    "ALLUSERSPROFILE": "F:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "APPDATA": "F:\\Users\\Buma\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "CommonProgramFiles": "F:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "F:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "F:\\Program Files\\Common Files",
+    "COMPOSE_CONVERT_WINDOWS_PATHS": "true",
+    "COMPUTERNAME": "BUMA-DESK",
+    "ComSpec": "F:\\Windows\\system32\\cmd.exe",
+    "DOCKER_CERT_PATH": "F:\\Users\\Buma\\.docker\\machine\\machines\\default",
+    "DOCKER_HOST": "tcp://192.168.99.100:2376",
+    "DOCKER_MACHINE_NAME": "default",
+    "DOCKER_TLS_VERIFY": "1",
+    "DOCKER_TOOLBOX_INSTALL_PATH": "F:\\Program Files\\Docker Toolbox",
+    "ELECTRON_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_6740_VDAPFRZIQKBNCJZC",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "F:",
+    "HOMEPATH": "\\Users\\Buma",
+    "JAVA_HOME": "F:\\Program Files\\Java\\jdk1.8.0_221",
+    "LOCALAPPDATA": "F:\\Users\\Buma\\AppData\\Local",
+    "LOGONSERVER": "\\\\BUMA-DESK",
+    "M2_HOME": "F:\\maven\\apache-maven-3.6.1",
+    "MOZ_PLUGIN_PATH": "F:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\",
+    "NO_PROXY": "192.168.99.100",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OS": "Windows_NT",
+    "Path": "F:\\Program Files\\iis express\\PHP\\v7.0;F:\\Windows\\system32\\inetsrv;F:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;F:\\Windows\\system32;F:\\Windows;F:\\Windows\\System32\\Wbem;F:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Microsoft VS Code\\bin;F:\\maven\\apache-maven-3.6.1\\bin;F:\\Program Files\\Microsoft\\Web Platform Installer\\;F:\\Program Files\\Git\\cmd;F:\\Program Files\\nodejs\\;F:\\Program Files (x86)\\Yarn\\bin\\;F:\\Users\\Buma\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;F:\\Users\\Buma\\AppData\\Local\\Programs\\Python\\Python37-32\\;F:\\Users\\Buma\\AppData\\Local\\GitHubDesktop\\bin;F:\\Users\\Buma\\AppData\\Roaming\\npm;F:\\Users\\Buma\\AppData\\Local\\Yarn\\bin;F:\\Program Files\\Docker Toolbox",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "AMD64 Family 16 Model 5 Stepping 3, AuthenticAMD",
+    "PROCESSOR_LEVEL": "16",
+    "PROCESSOR_REVISION": "0503",
+    "ProgramData": "F:\\ProgramData",
+    "ProgramFiles": "F:\\Program Files",
+    "ProgramFiles(x86)": "F:\\Program Files (x86)",
+    "ProgramW6432": "F:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "F:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "F:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "F:",
+    "SystemRoot": "F:\\Windows",
+    "TEMP": "F:\\Users\\Buma\\AppData\\Local\\Temp",
+    "TMP": "F:\\Users\\Buma\\AppData\\Local\\Temp",
+    "USERDOMAIN": "BUMA-DESK",
+    "USERNAME": "Buma",
+    "USERPROFILE": "F:\\Users\\Buma",
+    "VBOX_MSI_INSTALL_PATH": "F:\\Program Files\\Oracle\\VirtualBox\\",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CWD": "F:\\Program Files\\Microsoft VS Code",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\59a3f5a7a238524f890723858700cf75-1.44.2-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-280acd2f-297e-46b3-aca6-9aca0bd6324b-sock",
+    "VSCODE_LOGS": "F:\\Users\\Buma\\AppData\\Roaming\\Code\\logs\\20200510T114856",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"pt-br\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "F:\\Users\\Buma\\AppData\\Roaming\\Code\\CachedData\\ff915844119ce9485abfe8aa9076ec76b5300ddd",
+    "VSCODE_PID": "6740",
+    "windir": "F:\\Windows",
+    "windows_tracing_flags": "3",
+    "windows_tracing_logfile": "F:\\BVTBin\\Tests\\installpackage\\csilogfile.log"
+  },
+  "sharedObjects": [
+    "F:\\Program Files\\nodejs\\node.exe",
+    "F:\\Windows\\SYSTEM32\\ntdll.dll",
+    "F:\\Windows\\system32\\kernel32.dll",
+    "F:\\Windows\\system32\\KERNELBASE.dll",
+    "F:\\Windows\\system32\\dbghelp.dll",
+    "F:\\Windows\\system32\\msvcrt.dll",
+    "F:\\Windows\\system32\\WS2_32.dll",
+    "F:\\Windows\\system32\\RPCRT4.dll",
+    "F:\\Windows\\system32\\NSI.dll",
+    "F:\\Windows\\system32\\IPHLPAPI.DLL",
+    "F:\\Windows\\system32\\WINNSI.DLL",
+    "F:\\Windows\\system32\\PSAPI.DLL",
+    "F:\\Windows\\system32\\USERENV.dll",
+    "F:\\Windows\\system32\\profapi.dll",
+    "F:\\Windows\\system32\\ADVAPI32.dll",
+    "F:\\Windows\\SYSTEM32\\sechost.dll",
+    "F:\\Windows\\system32\\USER32.dll",
+    "F:\\Windows\\system32\\GDI32.dll",
+    "F:\\Windows\\system32\\LPK.dll",
+    "F:\\Windows\\system32\\USP10.dll",
+    "F:\\Windows\\system32\\CRYPT32.dll",
+    "F:\\Windows\\system32\\MSASN1.dll",
+    "F:\\Windows\\system32\\bcrypt.dll",
+    "F:\\Windows\\system32\\WINMM.dll",
+    "F:\\Windows\\system32\\IMM32.DLL",
+    "F:\\Windows\\system32\\MSCTF.dll",
+    "F:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "F:\\Windows\\system32\\powrprof.dll",
+    "F:\\Windows\\system32\\SETUPAPI.dll",
+    "F:\\Windows\\system32\\CFGMGR32.dll",
+    "F:\\Windows\\system32\\OLEAUT32.dll",
+    "F:\\Windows\\system32\\ole32.dll",
+    "F:\\Windows\\system32\\DEVOBJ.dll",
+    "F:\\Windows\\system32\\uxtheme.dll",
+    "F:\\Windows\\system32\\mswsock.dll",
+    "F:\\Windows\\System32\\wshtcpip.dll",
+    "F:\\Windows\\System32\\wship6.dll",
+    "F:\\Windows\\system32\\bcryptprimitives.dll",
+    "F:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "F:\\Windows\\system32\\dhcpcsvc.DLL",
+    "F:\\Windows\\system32\\NLAapi.dll",
+    "F:\\Windows\\system32\\napinsp.dll",
+    "F:\\Windows\\system32\\pnrpnsp.dll",
+    "F:\\Windows\\system32\\DNSAPI.dll",
+    "F:\\Windows\\System32\\winrnr.dll"
+  ]
+}

@@ -29,10 +29,10 @@ export const PokeInfoContainer = styled.div`
 
 export const Image = styled.img`
 	position: absolute;
-	height: ${({height}) => height && height != 0 ? `${height}px` : 0};
-	width: ${({width}) => width && width != 0 ? `${width}px` : 0};
-	right: ${({right}) => right && right != 0 ? `${right}px` : 0};
-	top: ${({top}) => top && top != 0 ? `${top}px` : 0};
+	height: ${({height}) => height && height !== 0 ? `${height}px` : 0};
+	width: ${({width}) => width && width !== 0 ? `${width}px` : 0};
+	right: ${({right}) => right && right !== 0 ? `${right}px` : 0};
+	top: ${({top}) => top && top !== 0 ? `${top}px` : 0};
 `;
 
 export const PokeballImage = styled.img`

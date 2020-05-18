@@ -1,13 +1,15 @@
 import React from 'react';
 import { MdKeyboardBackspace } from 'react-icons/md';
 
-import { Container, Header, CardContainer, Tabs, TabHeader, TabTitle, Image, PokeInfoContainer, PokeName, PokeNumber, Badge, BadgeContainer } from './styles';
-import CardItem from '../../components/CardItem';
+import { Container, Header, CardContainer, Tabs, TabHeader, TabTitle, TabContent, Image, PokeInfoContainer, PokeName, PokeNumber, Badge, BadgeContainer } from './styles';
 
 import img1 from '../../assets/pokemons/bulbasaur.svg';
 
 import badge1 from '../../assets/badges/grass.svg';
 import badge2 from '../../assets/badges/poison.svg';
+import About from '../../components/About';
+import Stats from '../../components/Stats';
+import Evolution from '../../components/Evolution';
 
 export default function Profile() {
 	const pokemon = {number: '#001', name: 'Bulbasaur', image: img1};
@@ -35,10 +37,16 @@ export default function Profile() {
 
 			<Tabs>
 				<TabHeader>
-					<TabTitle>About</TabTitle>
+					<TabTitle active>About</TabTitle>
 					<TabTitle>Stats</TabTitle>
 					<TabTitle>Evolution</TabTitle>
 				</TabHeader>
+
+				<TabContent>
+					<Evolution />
+					<About />
+					<Stats />
+				</TabContent>
 			</Tabs>
 		</Container>
 	);
